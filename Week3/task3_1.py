@@ -12,6 +12,11 @@ while nums > 0:
     num_list.append(nums % 10)
     nums //= 10
 num_list = num_list[::-1]
-print(num_list)
+
 num_list.sort()
+
+for i in range(len(num_list)):
+    if num_list[i] != 0:
+        num_list[0], num_list[i] = num_list[i], num_list[0]
+        break
 print(num_list)
