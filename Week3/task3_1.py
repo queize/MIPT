@@ -19,4 +19,4 @@ for i in range(len(num_list)):
     if num_list[i] != 0:
         num_list[0], num_list[i] = num_list[i], num_list[0]
         break
-print(num_list)
+print(*num_list, sep='')
