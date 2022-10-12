@@ -47,7 +47,6 @@ country = {
     '.net': 'Международный',
 }
 
-line = input()
-index = line.rfind('.')
-print(country[line[index:]])
+line = input().split('.')
+print(country['.'+line[1]])
 
