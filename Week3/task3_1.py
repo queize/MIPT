@@ -4,3 +4,14 @@
 
 # Важно! Число не может начинаться с 0.
 
+# 123412345
+
+nums = int(input())
+num_list = []
+while nums > 0:
+    num_list.append(nums % 10)
+    nums //= 10
+num_list = num_list[::-1]
+print(num_list)
+num_list.sort()
+print(num_list)
