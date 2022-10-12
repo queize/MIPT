@@ -7,7 +7,7 @@
 # 123412345
 
 nums = int(input())
-num_list = []
+
 while nums > 0:
     num_list.append(nums % 10)
     nums //= 10
