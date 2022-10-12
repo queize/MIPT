@@ -10,7 +10,6 @@
 
 N = int(input())
 nums_list = [tuple(map(int, input().split()[:2])) for _ in range(N)]
-print(*nums_list)
 
 nums_list.sort(key=lambda x: -x[1])
 
