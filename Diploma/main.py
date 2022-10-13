@@ -13,8 +13,8 @@ tA2 = ((phi2 + 2*np.pi*n) - phi0) / omega_A
 tB1 = ((phi1 + 2*np.pi*n) - (phi0 + 2*np.pi*(omega_B/omega_A - 1)*n)) / omega_B
 tB2 = ((phi2 + 2*np.pi*n) - (phi0 + 2*np.pi*(omega_B/omega_A - 1)*n)) / omega_B
 plt.plot(n, tA1, 'r')
-plt.plot(n, tA2, 'b')
-plt.plot(n, tB1, 'r--')
+plt.plot(n, tA2, 'r--')
+plt.plot(n, tB1, 'b')
 plt.plot(n, tB2, 'b--')
 
 plt.grid()
