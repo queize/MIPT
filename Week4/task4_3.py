@@ -7,8 +7,8 @@
 # Примечание. Вы можете написать собственную функцию, реализующую сортировку, а можете воспользоваться функцией Python sorted().
 
 words = dict()
-# file_path = input()
-with open('C:\\Users\\malys\\Python\\MIPT\\Week4\\test.txt', 'r') as file:
+file_path = input()
+with open(file_path, 'r') as file:
     for line in file.readlines():
         for x in line.split():
             words.setdefault(x, 0)
@@ -17,4 +17,3 @@ with open('C:\\Users\\malys\\Python\\MIPT\\Week4\\test.txt', 'r') as file:
 result = sorted(words.items(), key=lambda x: (-x[1], x[0]))
 for word, counts in result:
     print(counts, word)
-
