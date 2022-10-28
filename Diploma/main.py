@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Реализуйте класс Point3D, представляющий точку в трехмерном пространстве. Конструктор должен принимать три аргумента: 
 # x, y и z — координаты точки. Класс должен реализовывать метод distance_to, 
 # принимающий в качестве аргумента другую точку и возвращающий расстояние между ними.
@@ -19,3 +20,14 @@ class Point3D:
 
 
 
+=======
+import sys
+
+line_arr = []
+for line in sys.stdin:
+    line_arr.append([x.strip() for x in line.split('/')])
+
+new_line_arr = filter(lambda x: x[1] == line_arr[-1][0], line_arr[:-1])
+for line in sorted(new_line_arr, key=lambda x: -x[0]):
+    print(line[0])
+>>>>>>> 68d3927987612bca30ea39c6e5ba759eeeb9fccc
