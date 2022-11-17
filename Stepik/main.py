@@ -1,11 +1,9 @@
 import csv
 
-columns = ['first_name', 'second_name', 'class_number', 'class_letter']
-data = [['Тимур', 'Гуев', 11, 'А'], ['Руслан', 'Чаниев', 9, 'Б'], ['Артур', 'Харисов', 10, 'В']]
+names_dict = []
 
-with open('Stepik\\students.csv', 'w', encoding='utf-8', newline='') as file:
-    writer = csv.writer(file)
-    writer.writerow(columns)
-    for row in data:
-        writer.writerow(row)
+with open('salary_data.csv', 'r', encoding='utf-8') as file_csv
+    reader = csv.DictReader(file_csv, delimiter=';')
+    for rowDict in reader:
+        name, salary = rowDict['company_name'], int(rowDict['salary'])
 
